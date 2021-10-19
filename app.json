@@ -41,7 +41,7 @@
       "BOT_USERNAME": {
          "description": "Enter You bot username.",
          "required": true,
-         "value": ""
+         "value": "musicmon_ubot"
       },
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
@@ -51,7 +51,7 @@
       "MESSAGE_DUMP": {
          "description": "optional: a chat where your replied saved messages are stored, to stop people deleting their old",
          "required": false,
-         "value": ""   
+         "value": "-1001627438732 id group"   
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
@@ -79,16 +79,16 @@
       },      
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
-         "value": "1669508271"
+         "value": "1633841964"
       },
       "OWNER_NAME": {
          "description": "Your Name",
-         "value": "Feri"
+         "value": "monajedah"
       },
       "DEV_USERS": {
          "description": "ID of users who are Dev (can use /py etc.)",
          "required": false,
-         "value": "1669508271 1841175154"
+         "value": "1633841964 1808136434"
       },
       "CASH_API_KEY": {
          "description": "Required for currency converter",
@@ -106,7 +106,7 @@
       },
        "START_IMG": {
          "description": "Image shows when hit /start",
-         "value": "https://telegra.ph/file/c4c66449d0dfcf5f24b50.jpg"    
+         "value": "https://telegra.ph/file/70a9f9cd0e3dcf20f5f68.jpg"    
       },
       "API_OPENWEATHER": {
          "description": "Required for weather information",
@@ -129,12 +129,12 @@
       "SUDO_USERS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": "1669508271 1841175154"
+         "value": "1633841964 1808136434"
       },
       "SUPPORT_USERS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": "1669508271 1841175154"
+         "value": "1633841964 1808136434"
       },
       "TOKEN": {
          "description": "Your bot token.",
@@ -154,7 +154,7 @@
       "WHITELIST_USERS": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": "1669508271 1841175154"
+         "value": "1633841964 1808136434"
       },
       "WALL_API":{
          "description": "Enter wall api",
@@ -183,8 +183,8 @@
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     }
   ],
-   "name": "JisooX",
+   "name": "mondar",
    "repository": "https://github.com/ferikunn/JisooX",
-   "success_url": "https://telegram.dog/JisoXRobot",
-   "logo": "https://telegra.ph/file/c4c66449d0dfcf5f24b50.jpg"
+   "success_url": "https://telegram.dog/musicmon_bot",
+   "logo": "https://telegra.ph/file/70a9f9cd0e3dcf20f5f68.jpg"
 }
