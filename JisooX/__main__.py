@@ -49,16 +49,16 @@ _Maintained by_ [{}](tg://user?id={})
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
-the things I can help you with.
+Saya adalah bot manajemen grup modular dengan beberapa tambahan yang menyenangkan! Lihat berikut ini untuk ide dari beberapa \
+hal-hal yang dapat saya bantu.
 *Main* commands available:
- 💠 - /start: start the bot
- 💠 - /help: PM's you this message.
- 💠 - /help <module name>: PM's you info about that module.
- 💠 - /source: Information about my source.
- 💠 - /settings:
-   🔹 - in PM: will send you your settings for all supported modules.
-   🔹 - in a group: will redirect you to pm, with all that chat's settings.
+ 🥷 - /start: start the bot
+ 🥷 - /help: PM's you this message.
+ 🥷 - /help <module name>: PM's you info about that module.
+ 🥷 - /source: Information about my source.
+ 🥷 - /settings:
+   🔹 - di PM: akan mengirimkan pengaturan Anda untuk semua modul yang didukung.
+   🔹 - dalam grup: akan mengarahkan Anda ke pm, dengan semua pengaturan obrolan itu.
 {}
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
@@ -72,8 +72,8 @@ def vercheck() -> str:
 
 
 SOURCE_STRING = """
-⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://github.com/feriexp/JisooXRobot)
-⚡You Can Clone Me [Here](https://heroku.com/deploy?template=https://github.com/feriexp/JisooXRobot.git)
+⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://github.com/mondar111/XRobot)
+⚡You Can Clone Me [Here](https://heroku.com/deploy?template=https://github.com/mondar111/XRobot.git)
 """
 
 
@@ -92,7 +92,7 @@ GDPR = []
 
 START_IMG = os.environ.get('START_IMG', None)
 if START_IMG is None:
-    img = "https://telegra.ph/file/7b375b3abb0b483fd0d98.jpg"
+    img = "https://telegra.ph/file/70a9f9cd0e3dcf20f5f68.jpg"
 else:
   img = START_IMG    
     
@@ -193,8 +193,8 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="[► Help ◄]",callback_data="help_back"),InlineKeyboardButton(text="[► Creator ◄]",url="https://t.me/xflicks")]]
-    keyboard += [[InlineKeyboardButton(text="[► Source ◄]",url="https://github.com/FeriEXP/JisooXRobot"),InlineKeyboardButton(text="[► Add Me ◄]",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard = [[InlineKeyboardButton(text="⚠️ Help ⚠️",callback_data="help_back"),InlineKeyboardButton(text="🥷OWNER🥷",url="https://t.me/monajedah")]]
+    keyboard += [[InlineKeyboardButton(text="🥷 Source 🥷",url="https://github.com/mondar111/XRobot"),InlineKeyboardButton(text="🌟Add Me🌟",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
@@ -294,8 +294,8 @@ def get_help(bot: Bot, update: Update):
 
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="[► Help ◄]",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="[► Creator ◄]",url="https://t.me/xflicks")]]))
+                                                [[InlineKeyboardButton(text="⚠️Help⚠️",url="t.me/{}?start=help".format(bot.username))],  
+                                                [InlineKeyboardButton(text="🥷Creator🥷",url="https://t.me/MONAJEDAH")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
